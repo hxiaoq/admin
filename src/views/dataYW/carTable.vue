@@ -1,0 +1,141 @@
+<template>
+  <el-table
+    v-if="isTrue"
+    :data="tableData"
+    style="width: 100%"
+    max-height="250"
+  >
+    <el-table-column
+      type="index"
+      width="50"
+    />
+    <el-table-column
+      fixed
+      prop="date"
+      label="行政区"
+      width="150"
+    />
+    <el-table-column
+      prop="name"
+      label="车企名称"
+      width="120"
+    />
+    <el-table-column
+      prop="province"
+      label="车牌号码"
+      width="120"
+    />
+    <el-table-column
+      prop="city"
+      label="设备运维公司"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="开始时间"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="结束时间"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="预警次数"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="预警时长"
+      width="120"
+    />
+  </el-table>
+  <el-table
+    v-else
+    :data="tableData"
+    style="width: 100%"
+    max-height="250"
+  >
+    <el-table-column
+      type="index"
+      width="50"
+    />
+    <el-table-column
+      fixed
+      prop="date"
+      label="行政区"
+      width="150"
+    />
+    <el-table-column
+      prop="name"
+      label="车企名称"
+      width="120"
+    />
+    <el-table-column
+      prop="province"
+      label="车牌号码"
+      width="120"
+    />
+    <el-table-column
+      prop="city"
+      label="设备运维公司"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="预警类型"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="预警发生时间"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="预警结束时间"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="预警时长"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="预警简述"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="预警等级"
+      width="120"
+    />
+    <el-table-column
+      prop="address"
+      label="预警详情"
+      width="300"
+    />
+    <el-table-column
+      prop="zip"
+      label="操作"
+      width="120"
+    />
+  </el-table>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      isTrue: true,
+      tableData: []
+    }
+  }
+}
+</script>
+<style lang='scss' scoped>
+  .el-form-item{
+    margin-bottom: 10px;
+  }
+</style>
